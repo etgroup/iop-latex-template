@@ -1,0 +1,62 @@
+
+%!TEX root = ../article.tex
+
+% Entry point for sections:
+%
+% This file specifies the sections and  its respective order in which they must
+% be included.
+
+% Article Sections
+\section{Methods}
+\label{sec:methods}
+
+\subsection{How to improve the academic English writing}
+
+The easiest way is to \ldots
+
+\begin{itemize}
+  \item Find 10 or more relevant papers that wrote by the native speakers, read and memorize the classic sentences.
+  \item Learn how to describe and discuss the results, figures and tables; conclude the work and demonstrate the significance.
+  \item Keep in mind that \textbf{NO PLAGIARISM} is allowed.
+  \item One can avoid plagiarism by word-by-word rephrasing the sentences.
+\end{itemize}
+
+
+\subsection{Figures \& Tables}
+
+Use of figures and tables to illustrate the results should be firstly considered.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\columnwidth]{../figure_examples/circuit/simple.pdf}
+  \caption{Circuit sample.}
+  \label{fig:circuit_simple}
+\end{figure}
+
+
+
+\renewcommand\arraystretch{1.8}
+\begin{table}
+\caption{Summery of effective medium approximation formulas.}\label{tab:formula}
+  \centering
+  \begin{tabular}{lll}
+  \hline
+Relation & Formula &  Correction factor \\
+\hline
+Parallel/Linear &  $\delta_h^p = \frac{\varepsilon_{e}-\varepsilon_{l}}{\varepsilon_{h}-\varepsilon_{l}}$
+       &   1 \\
+Series & $\delta_h^s= \frac{\varepsilon_{h}}{\varepsilon_{e}}\frac{(\varepsilon_{e}-\varepsilon_{l})}{(\varepsilon_{h}-\varepsilon_{l})}$
+& $\left(\frac{\varepsilon_h}{\varepsilon_e}\right)$\\
+ Maxwell-Garnett &
+$\delta_{h}^M
+=\frac{(\varepsilon_{h}+2\varepsilon_{l})}{(\varepsilon_{e}+2\varepsilon_{l})}\frac{(\varepsilon_{e}-\varepsilon_{l})}{(\varepsilon_{h}-\varepsilon_{l})}
+$&$\left(\frac{\varepsilon_{h}+2\varepsilon_{l}}{\varepsilon_{e}+2\varepsilon_{l}}\right)$\\
+Bruggeman &  $\delta_h^{Br}= \frac{\varepsilon_{e}+\varepsilon_{h}}{2\varepsilon_{e}}\frac{(\varepsilon_{e}-\varepsilon_{l})}{(\varepsilon_{h}-\varepsilon_{l})}$
+& $\left(\frac{\varepsilon_{e}+\varepsilon_{h}}{2\varepsilon_{e}}\right)$\\
+B\"{o}ttcher &  $\delta_h^{Bo}=
+  \frac{(\varepsilon_h+2\varepsilon_e)}{3\varepsilon_e}\frac{(\varepsilon_{e}-\varepsilon_{l})}{(\varepsilon_{h}-\varepsilon_{l})}$
+&$ \left(\frac{2\varepsilon_{e}+\varepsilon_{h}}{3\varepsilon_{e}}\right)$ \\ \hline
+  \end{tabular}
+\end{table}
+\renewcommand\arraystretch{1}
+
